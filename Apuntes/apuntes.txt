@@ -1,0 +1,8 @@
+ng serve : levanta servidor en el puerto 4200
+ng new : crea un nuevo proyecto de angular con los archivos base para comenzar a trabajar
+ng generate component: crea un nuevo componente con los archivos base para implementarlo.
+
+npm i -s bootstrap :  Instalar bootstrap
+*ngFor : ciclo for en un template
+
+# - definir variables de plantilla (templates)
