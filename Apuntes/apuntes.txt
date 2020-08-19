@@ -3,6 +3,27 @@ ng new : crea un nuevo proyecto de angular con los archivos base para comenzar a
 ng generate component: crea un nuevo componente con los archivos base para implementarlo.
 
 npm i -s bootstrap :  Instalar bootstrap
+
 *ngFor : ciclo for en un template
+ngIf : validacion
+ngNonBindable :  ejecuta sin las particularidades del framework
+ngSwitch ngSwitchCase ngdefault : switch
 
 # - definir variables de plantilla (templates)
+@input: recibe las variables desde el template
+@output: envia las variables desde el template
+EventEmitter: componente que captura los eventos
+
+FormGroup =  Clase que agrupa los componentes del formulario
+formControls = Componentes del formulario
+FormBuilder = constructor de FromGroup y FormsControls, pudiendo agregar validaciones.-
+Validators = validaciones de formulario
+
+rxjs - APi de observables :Es inmutable porque solo lo que hacemos es transformarlo pero retornando una nueva instancia con reducers, y es observable y de esa manera en los componentes actualizamos las vistas.
+fromEvent - Captura de eventos
+filter - validación del evento
+debounce - captura el evento despues del tiempo indicado
+map - Con map podemos retornar el mismo objeto u otro objeto que resulte de la manipulación del primero	
+
+REDUX
+npm install --save @ngrx/store @ngrx/effects - Librearia contruida sobre redux
