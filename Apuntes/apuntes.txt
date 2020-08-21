@@ -27,3 +27,8 @@ map - Con map podemos retornar el mismo objeto u otro objeto que resulte de la m
 
 REDUX
 npm install --save @ngrx/store @ngrx/effects - Librearia contruida sobre redux
+
+ng g guard guards/usuario-logueado/usuario-logueado -- Crear GUARD
+ng g s services/auth -- Servicio de autenticación
+ng g c components/login/login
+ng g c components/protected/protected
