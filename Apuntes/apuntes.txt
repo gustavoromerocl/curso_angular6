@@ -32,3 +32,14 @@ ng g guard guards/usuario-logueado/usuario-logueado -- Crear GUARD
 ng g s services/auth -- Servicio de autenticación
 ng g c components/login/login
 ng g c components/protected/protected
+
+//Crear un modulo con el routing predefinido
+ng g m reservas/reservas --module app --flat --routing 
+
+--EXPRESS
+
+mkdir express-server   -- Crear carpera
+npm init  -. iniciar package
+npm install express --save  instalar api rest
+npm install cors  --
+node app.js
