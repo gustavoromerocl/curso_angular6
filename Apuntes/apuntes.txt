@@ -43,3 +43,9 @@ npm init  -. iniciar package
 npm install express --save  instalar api rest
 npm install cors  --
 node app.js
+
+--INDEXED DB
+npm install dexie --save
+
+--XNG TRANSLATE
+npm install @ngx-translate/core --save

@@ -12,7 +12,7 @@ import { ListaDestinosComponent } from './components/lista-destinos/lista-destin
 import { DestinoDetalleComponent } from './components/destino-detalle/destino-detalle.component';
 import { FormDestinoViajeComponent } from './components/form-destino-viaje/form-destino-viaje.component';
 import Dexie from 'dexie';
-import { TranslateService, TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 //redux
 import { StoreModule as NgRxStoreModule, ActionReducerMap, Store } from '@ngrx/store';
@@ -35,7 +35,7 @@ import { VuelosDetalleComponentComponent } from './components/vuelos/vuelos-deta
 import { ReservasModule } from './reservas/reservas.module';
 import { DestinoViaje } from './models/destino-viaje.model';
 import { Observable, from } from 'rxjs';
-import { flatMap } from 'rxjs/operators';
+import { map,flatMap } from 'rxjs/operators';
 
 //app config
 export interface AppConfig{
@@ -111,6 +111,7 @@ class AppLoadService {
 export class Translation {
   constructor(public id:number, public lang:string, public key:string, public value: string) {}
 }
+
 @Injectable({
   providedIn: 'root'
 })

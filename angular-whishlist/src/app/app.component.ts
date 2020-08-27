@@ -15,8 +15,8 @@ export class AppComponent {
   });
 
   constructor(public translate: TranslateService){
-    console.log('******************** get translation');
-    translate.getTranslation('en').subscribe(x => console.log('x:' + JSON.stringify(x)));
+    console.log('***************** get translation');
+    translate.getTranslation('en').subscribe(x => console.log('x: ' + JSON.stringify(x)));
     translate.setDefaultLang('es');
   }
 }
