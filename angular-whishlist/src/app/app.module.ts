@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { HttpClientModule, HttpHeaders, HttpRequest, HttpClient } from '@angular/common/http';
+import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -200,13 +201,14 @@ function HttpLoaderFactory(http: HttpClient) {
     EffectsModule.forRoot([DestinosViajesEffects]),
     StoreDevtoolsModule.instrument(),
     ReservasModule,
+    NgxMapboxGLModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: (HttpLoaderFactory),
         deps: [HttpClient]
       }
-    })
+    }),
   ],
   providers: [
     AuthService, UsuarioLogueadoGuard,
