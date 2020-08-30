@@ -1,16 +1,7 @@
-version: 2
-jobs:
-  build:
-    working_directory: ~/myapp/angular-whishlist
-    docker:
-      - image: circleci/node:latest-browsers
-    steps:
-      - checkout:
-          path: ~/myapp
-      - restore_cache:
-           key: angular-whishlist-{{ .Branch }}-{{ checksum "package-lock.json"
-      - save_cache:
-          key: angular-whishlist-{{ .Branch }}-{{ checksum "package-lock.json"
-          paths:
-            - "node_modules"
-      - run: npm run test -- --progress=false --watch=false --browsers=ChromeHeadlessCI --source-map=false
+version: 2.1
+orbs:
+  node: circleci/node@3.0.0
+workflows:
+  node-tests:
+    jobs:
+      - node/test
