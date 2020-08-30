@@ -49,3 +49,7 @@ npm install dexie --save
 
 --XNG TRANSLATE
 npm install @ngx-translate/core --save
+
+ng test -- inciar herramienta de testing de angular
+
+--CYPRESS JS
